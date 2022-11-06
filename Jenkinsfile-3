@@ -1,14 +1,12 @@
 
 pipeline {
   agent any
-  triggers {
-    upstream 'job-1, '
-  }
+
 
   stages {
     stage ("Test") {
       steps {
-         echo "hello from job 3"
+         sh "pwd"
       }
     }
   }
